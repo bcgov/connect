@@ -1,15 +1,12 @@
-# Organization Contributing Guidelines
+# **Organization Contributing Guidelines**
 
-Welcome, all types of contributions are encouraged and valued! Coding, documentation, tests, feature requests and even questions that help clarify our products for everyone is greatly appreciated.
-
-This document defines the standard engineering workflows, governance, and coding philosophies for our organization.
+Welcome\! This document defines the standard engineering workflows, governance, and coding philosophies for our organization.
 
 Because we manage a shared core architecture across multiple distinct product lines, **these guidelines apply universally to all repositories within our organization unless explicitly overridden.**
 
 If a specific repository contains its own `CONTRIBUTING.md`, please review that file for local environment setups, product-specific commands, or unique architectural notes. However, the core engagement and pull request workflows outlined below remain our organizational standard.
 
 ---
-
 ## **🏛️ Engineering Governance & Engagement**
 
 To keep our architecture aligned and ensure your time is well spent, we follow a strict issue-first engagement model.
@@ -94,12 +91,6 @@ ii. For issues in tracked in a different repo, you can create a local branch:
 git switch -c feat/issue#-your-feature-name
 ```
 
-```
-1. **Commit changes:** `git commit -m "fix(api): ..."`
-2. **Push:** `git push` (Now automatic thanks to `autoSetupRemote`)
-3. **Create PR:** `gh pr create --title "fix: ..." --body "Closes bcgov/entity#33335"` (Now automatic thanks to `set-default`)
-```
-
 ---
 
 ### **B. Test, Lint and Commit**
@@ -144,20 +135,20 @@ git commit -m "<type>[optional scope]: <description>"
 
 Once your feature is complete, tested, and linted:
 
-1. **Push your branch to your fork.**  
+1. Push your branch to your fork.  
     `git push`  
     \*automatic if you set `autoSetupRemote`
 
-2. **Open a Pull Request** against the upstream repository's target branch  
+2. Open a Pull Request against the upstream repository's target branch  
     if using the CLI:  
     `gh pr create --title "fix: ..." --body "Closes bcgov/entity#123"`  
     \*automatic if you set `set-default`  
     if using the Web UI:  
     Complete the provided PR template in its entirety, explicitly linking the approved issue (e.g., `Closes #123`).
 
-3. **Ensure all automated CI checks** (tests, linting, commit formats) pass.
+3. Ensure all automated CI checks (tests, linting, commit formats) pass.
 
-4. **Address any requested changes** from the code review phase.
+4. Address any requested changes from the code review phase.
 
 ---
 
