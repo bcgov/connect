@@ -16,8 +16,11 @@ body:
         - SBC-Auth
         - SBC-Pay
         - API Gateway
+        - General Architecture / Framework
         - Developer Site
         - Notify
+        - DRS
+        - Dangerzone
         - Templates
   - type: textarea
     attributes:
