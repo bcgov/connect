@@ -25,7 +25,7 @@ If your proposed feature or fix is not tracked, open a new issue. Clearly outlin
 
 ---
 
-## ![GitHub Logo][image1] **The Standard GitHub Workflow**
+## **The Standard GitHub Workflow**
 
 We strictly follow the **Fork-Clone-Branch-PR** workflow across all products. Direct commits to `main` or `develop` branches are restricted.
 
