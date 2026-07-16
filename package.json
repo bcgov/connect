@@ -1,0 +1,21 @@
+{
+  "name": "connect-root",
+  "private": true,
+  "type": "module",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@sbc-connect/nuxt-auth",
+      "@sbc-connect/nuxt-base",
+      "@sbc-connect/nuxt-forms",
+      "@sbc-connect/nuxt-pay",
+      "better-sqlite3",
+      "esbuild",
+      "sharp",
+      "vue-demi"
+    ]
+  },
+  "lint-staged": {
+    "hub/**/*.{ts,vue}": "pnpm --filter hub exec eslint --fix"
+  }
+}

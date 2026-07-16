@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@layer base {
+  a[target="_blank"]::after {
+    content: " ↗";
+    font-size: 0.8em;
+    vertical-align: super;
+    opacity: 0.7;
+    margin-left: 0.1rem;
+  }
+
+  /* Prevent the icon from being added to images or buttons that are links */
+  a[target="_blank"]:has(img)::after,
+  a[target="_blank"]:has(button)::after {
+    content: none;
+  }
+}

@@ -1,0 +1,20 @@
+# ==========================================
+# Force gcloud to include critical workspace files
+# ==========================================
+!package.json
+!pnpm-lock.yaml
+!pnpm-workspace.yaml
+
+# Do NOT upload massive local dependency caches to Google
+node_modules/
+**/node_modules/
+
+# Do NOT upload local environment configurations or IDE files
+.git/
+.github/
+.nuxt/
+.output/
+.env
+*.local
+.vscode/
+.idea/

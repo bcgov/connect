@@ -1,0 +1,9 @@
+pre-commit:
+  parallel: true
+  commands:
+    gitleaks:
+      tags: security secrets
+      run: npx gitleaks-secret-scanner
+    lint:
+      glob: "*.{js,ts,vue,css,md}"
+      run: npx lint-staged

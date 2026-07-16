@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600">
+  <!-- Styles for consistent text and Gov BC colors -->
+  <style>
+    .node-rect { fill: #f2f5f9; stroke: #003366; stroke-width: 2px; rx: 15; }
+    .text-title { fill: #313132; font-family: 'BCSans', sans-serif; font-size: 20px; font-weight: bold; text-anchor: middle; }
+    .text-body { fill: #313132; font-family: 'BCSans', sans-serif; font-size: 18px; text-anchor: middle; }
+    .flow-arrow { stroke: #808080; stroke-width: 3px; fill: none; marker-end: url(#arrowhead); }
+  </style>
+
+  <!-- Definition of a reusable grey arrowhead -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#808080" />
+    </marker>
+  </defs>
+
+  <!-- Node 1: 1. Decisions -->
+  <g id="node1" transform="translate(50, 50)">
+    <rect class="node-rect" width="300" height="200" />
+    <text x="150" y="100">
+      <tspan class="text-title" x="150" dy="0">1. Decisions</tspan>
+      <tspan class="text-body" x="150" dy="40">New Build or App Update?</tspan>
+    </text>
+  </g>
+
+  <!-- Node 2: 2. Confirm Tech -->
+  <g id="node2" transform="translate(50, 350)">
+    <rect class="node-rect" width="300" height="200" />
+    <text x="150" y="100">
+      <tspan class="text-title" x="150" dy="0">2. Confirm Tech</tspan>
+      <tspan class="text-body" x="150" dy="40">Choose Auth, Pay &amp; Gateway</tspan>
+    </text>
+  </g>
+
+  <!-- Node 3: 3. Support Channels -->
+  <g id="node3" transform="translate(500, 50)">
+    <rect class="node-rect" width="300" height="200" />
+    <text x="150" y="100">
+      <tspan class="text-title" x="150" dy="0">3. Support Channels</tspan>
+      <tspan class="text-body" x="150" dy="40">Web, Chat, Phone &amp; In-Person</tspan>
+    </text>
+  </g>
+
+  <!-- Node 4: 4. Agreements -->
+  <g id="node4" transform="translate(500, 350)">
+    <rect class="node-rect" width="300" height="200" />
+    <text x="150" y="100">
+      <tspan class="text-title" x="150" dy="0">4. Agreements</tspan>
+      <tspan class="text-body" x="150" dy="40">MOU, Costs &amp; Ops Launch</tspan>
+    </text>
+  </g>
+
+  <!-- Connective Arrows -->
+  <g id="arrows">
+    <!-- Arrow 1 to 2: Direct L->B -->
+    <path class="flow-arrow" d="M 200 250 L 200 350" />
+    
+    <!-- Arrow 2 to 3: Serpentine snake across columns -->
+    <path class="flow-arrow" d="M 350 450 C 425 450 425 150 500 150" />
+    
+    <!-- Arrow 3 to 4: Direct L->B -->
+    <path class="flow-arrow" d="M 650 250 L 650 350" />
+  </g>
+</svg>

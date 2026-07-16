@@ -1,0 +1,30 @@
+{
+  "name": "design",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "build:static": "STUDIO=false nuxt generate",
+    "build:studio": "STUDIO=true nuxt build",
+    "dev": "nuxt dev",
+    "dev:studio": "STUDIO=true nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@nuxt/a11y": "1.0.0-alpha.1",
+    "@nuxt/content": "^3.13.0",
+    "@nuxt/ui": "^4.7.1",
+    "@sbc-connect/nuxt-pay": "^0.6.1",
+    "better-sqlite3": "^12.9.0",
+    "mermaid": "^11.15.0",
+    "nuxt": "^4.4.4",
+    "nuxt-studio": "1.7.0",
+    "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
+    "@playwright/test": "^1.61.1"
+  }
+}
