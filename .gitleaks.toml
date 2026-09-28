@@ -1,0 +1,21 @@
+title = "connect gitleaks config"
+
+# Start from gitleaks' maintained default ruleset and layer an allowlist
+# on top for known false positives, per the Git Hooks RFC:
+# https://github.com/bcgov/connect/discussions/23
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Lockfiles, this config, and documentation placeholders"
+paths = [
+  '''pnpm-lock\.yaml''',
+  '''package-lock\.json''',
+  '''\.gitleaks\.toml''',
+]
+stopwords = [
+  "YOUR_API_KEY",
+  "YOUR_ACCESS_TOKEN",
+  "<YOUR_API_KEY>",
+  "YOUR_CLIENT_SECRET",
+]

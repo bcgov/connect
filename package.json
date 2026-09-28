@@ -3,22 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prepare": "lefthook install"
+    "prepare": "git --version && lefthook install || exit 0"
   },
   "devDependencies": {
     "lefthook": "^1.11.3"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "@sbc-connect/nuxt-auth",
-      "@sbc-connect/nuxt-base",
-      "@sbc-connect/nuxt-forms",
-      "@sbc-connect/nuxt-pay",
-      "better-sqlite3",
-      "esbuild",
-      "sharp",
-      "vue-demi"
-    ]
   }
 }

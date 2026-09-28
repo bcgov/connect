@@ -1,12 +1,9 @@
-# Lefthook Git hooks configuration for Nuxt implementation
+# Lefthook Git hooks configuration
 # https://github.com/evilmartians/lefthook
 
 pre-commit:
   parallel: true
   commands:
-    lint:
-      glob: "*.{js,ts,jsx,tsx,vue}"
-      run: pnpm run lint
-    typecheck:
-      glob: "*.{js,ts,vue}"
-      run: pnpm run typecheck
+    secret-scan:
+      tags: security
+      run: npx gitleaks-secret-scanner
